@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR PRICE PREDICTION</title>
+</head>
+<body>
+
+    <p>Hello {{fname}}</p>
+    <form action="apipost" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="age">Enter Car's Age</label>
+            <input type="text" name="age" placeholder="age in yrs">
+        </div>
+        <div class="form-group">
+            <label for="km_driven">Enter km_driven</label>
+            <input type="text" name="km_driven" placeholder="km_driven">
+        </div>
+        <div class="form-group">
+            <label for="mileage">Enter mileage</label>
+            <input type="text" name="mileage" placeholder="mileage">
+        </div>
+        <div class="form-group">
+            <label for="engine">Enter engine</label>
+            <input type="text" name="engine" placeholder="engine">
+        </div>
+        <div class="form-group">
+            <label for="max_power">Enter max_power</label>
+            <input type="text" name="max_power" placeholder="max_power">
+        </div>
+        <div class="form-group">
+            <label for="seats">Enter seats</label>
+            <input type="text" name="seats" placeholder="seats">
+        </div>
+        <div class="form-group">
+            <label for="Brand">Enter Brand</label>
+            <input type="text" name="Brand" placeholder="Brand">
+        </div>
+        <div class="form-group">
+            <label for="full_name">Enter full_name</label>
+            <input type="text" name="full_name" placeholder="full_name">
+        </div>
+        <div class="form-group">
+            <label for="seller_type">Enter seller_type</label>
+            <input type="text" name="seller_type" placeholder="seller_type">
+        </div>
+        <div class="form-group">
+            <label for="fuel_type">Enter fuel_type</label>
+            <input type="text" name="fuel_type" placeholder="fuel_type">
+        </div>
+        <div class="form-group">
+            <label for="transmission_type">Enter transmission_type</label>
+            <input type="text" name="transmission_type" placeholder="transmission_type">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">result</button>
+    </form> 
+</body>
+</html>

@@ -1,0 +1,1 @@
+web gunicorn carprce.wsgi:application --log-file -
