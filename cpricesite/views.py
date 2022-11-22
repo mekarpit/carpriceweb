@@ -11,7 +11,7 @@ def prediction(request):
     return render(request,'prediction.html',{'fname':name})
 
 def apiget(request):
-    result = requests.get('https://carsaleprice4.herokuapp.com/').json()
+    result = requests.get('https://carsalepriceapi.herokuapp.com/').json()
     print(result)
     return render(request,'apiget.html',{'answer':result})
 
@@ -44,7 +44,7 @@ def apipost(request):
     "c_fuel_type": fuel_type,
     "c_transmission_type": transmission_type
   })
-    apiresponse = requests.post('https://carsaleprice4.herokuapp.com/test',data = inputval).json()
+    apiresponse = requests.post('https://carsalepriceapi.herokuapp.com/test',data = inputval).json()
     print(apiresponse)
     #print(inputval)
     return render(request,'apipost.html',{'data':apiresponse})
